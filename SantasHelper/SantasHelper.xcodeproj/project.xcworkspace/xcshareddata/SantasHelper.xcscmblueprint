@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6F5465571D308F2793125CDD2E96E1BCD635371D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6F5465571D308F2793125CDD2E96E1BCD635371D" : 0,
+    "E7EE15F8183E4819AFAC294CE281E6774F05D8A9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1C724ADA-05A6-47B8-B296-9CC0F3D0B5B0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6F5465571D308F2793125CDD2E96E1BCD635371D" : "Santas-Helper\/",
+    "E7EE15F8183E4819AFAC294CE281E6774F05D8A9" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SantasHelper",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SantasHelper\/SantasHelper.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dustingoodman\/Santas-Helper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6F5465571D308F2793125CDD2E96E1BCD635371D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CocoaPods\/Specs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E7EE15F8183E4819AFAC294CE281E6774F05D8A9"
+    }
+  ]
+}
