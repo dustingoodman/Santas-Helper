@@ -40,6 +40,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                     </textField>
+                                    <view contentMode="scaleToFill" id="kvQ-M7-7IT">
+                                        <rect key="frame" x="14" y="43" width="292" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84961939102564099" green="0.84961939102564099" blue="0.84961939102564099" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -78,7 +83,7 @@
             </objects>
             <point key="canvasLocation" x="603" y="406"/>
         </scene>
-        <!--Item-->
+        <!--Santa's Bag-->
         <scene sceneID="hUm-SL-rgr">
             <objects>
                 <viewController id="VdM-qX-9IJ" customClass="HomeScreenViewController" customModule="SantasHelper" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,11 +118,33 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="pVP-w4-Z8Z"/>
-                    <navigationItem key="navigationItem" id="AXG-4E-tPd"/>
+                    <navigationItem key="navigationItem" title="Santa's Bag" id="cNP-df-1WV">
+                        <barButtonItem key="rightBarButtonItem" image="Gift Bag" id="WSN-h6-IK1"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Aa-j6-PwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1051" y="406"/>
+        </scene>
+        <!--Settings Main View Controller-->
+        <scene sceneID="THv-wf-c66">
+            <objects>
+                <viewController id="bS4-3h-Wlz" customClass="settingsMainViewController" customModule="SantasHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T8x-wc-ZHI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Profile Section" id="eHd-9q-y0I">
+                                <rect key="frame" x="108" y="32" width="104" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2EV-1a-2Gx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="1063"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cF9-Zm-KB7">
@@ -176,7 +203,9 @@
     </scenes>
     <resources>
         <image name="Deer" width="185" height="273"/>
+        <image name="Gift Bag" width="17" height="24"/>
         <image name="Plus Button" width="124" height="124"/>
+        <image name="Profile Section" width="104" height="85"/>
         <image name="Santa" width="263" height="190"/>
         <image name="Santa-1" width="148" height="240"/>
         <image name="Santa’s Helper" width="284" height="49"/>
