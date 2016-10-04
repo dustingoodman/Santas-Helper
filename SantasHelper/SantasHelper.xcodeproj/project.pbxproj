@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		278D67831DA3FED100593270 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278D67821DA3FED100593270 /* HomeScreenViewController.swift */; };
+		278D67851DA401E000593270 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278D67841DA401E000593270 /* LoginViewController.swift */; };
 		399962E81D958D9E001284AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399962E71D958D9E001284AF /* AppDelegate.swift */; };
 		399962EA1D958D9E001284AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399962E91D958D9E001284AF /* ViewController.swift */; };
 		399962ED1D958D9E001284AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399962EB1D958D9E001284AF /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		278D67821DA3FED100593270 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		278D67841DA401E000593270 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		399962E41D958D9E001284AF /* SantasHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SantasHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		399962E71D958D9E001284AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		399962E91D958D9E001284AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 		399962DB1D958D9E001284AF = {
 			isa = PBXGroup;
 			children = (
+				278D67821DA3FED100593270 /* HomeScreenViewController.swift */,
+				278D67841DA401E000593270 /* LoginViewController.swift */,
 				399962E61D958D9E001284AF /* SantasHelper */,
 				399962FB1D958D9E001284AF /* SantasHelperTests */,
 				399963061D958D9E001284AF /* SantasHelperUITests */,
@@ -265,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278D67851DA401E000593270 /* LoginViewController.swift in Sources */,
 				399962EA1D958D9E001284AF /* ViewController.swift in Sources */,
 				399962E81D958D9E001284AF /* AppDelegate.swift in Sources */,
+				278D67831DA3FED100593270 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +507,7 @@
 				3999630E1D958D9E001284AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3999630F1D958D9E001284AF /* Build configuration list for PBXNativeTarget "SantasHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +516,7 @@
 				399963111D958D9E001284AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		399963121D958D9E001284AF /* Build configuration list for PBXNativeTarget "SantasHelperUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +525,7 @@
 				399963141D958D9E001284AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

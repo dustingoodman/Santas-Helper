@@ -1,61 +1,122 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Zu2-g0-HO6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SantasHelper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="SantasHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TealBackground" id="ASQ-tN-SYT">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="237"/>
+                            <view contentMode="scaleToFill" id="05A-Wd-HU9" userLabel="logoView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Santa’s Helper" id="j4D-81-JJ8">
-                                <rect key="frame" x="25" y="26" width="284" height="49"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gfT-9n-jtB">
-                                <rect key="frame" x="14" y="415" width="292" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TealBackground" id="ASQ-tN-SYT">
+                                        <rect key="frame" x="0.0" y="23" width="320" height="236"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Santa’s Helper" id="j4D-81-JJ8">
+                                        <rect key="frame" x="18" y="45" width="284" height="49"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Santa" id="QPm-D2-6De">
+                                        <rect key="frame" x="29" y="114" width="263" height="190"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="agU-I5-kBQ" userLabel="signinFieldView">
+                                <rect key="frame" x="0.0" y="319" width="320" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.50588235294117645" green="0.83137254901960778" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Santa" id="QPm-D2-6De">
-                                <rect key="frame" x="29" y="91" width="263" height="190"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gfT-9n-jtB">
+                                        <rect key="frame" x="14" y="78" width="292" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.50588235294117645" green="0.83137254901960778" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="822-XE-2Yd">
+                                        <rect key="frame" x="14" y="9" width="292" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" id="F7r-PI-6Rm">
+                                        <rect key="frame" x="14" y="40" width="292" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="s0i-ox-dti"/>
+                    <connections>
+                        <outlet property="emailfield" destination="822-XE-2Yd" id="dhW-aN-toF"/>
+                        <outlet property="logoSuperView" destination="05A-Wd-HU9" id="6vl-8h-vOu"/>
+                        <outlet property="passwordField" destination="F7r-PI-6Rm" id="pnC-1b-TCs"/>
+                        <outlet property="signinButton" destination="gfT-9n-jtB" id="dqX-Zg-uvV"/>
+                        <outlet property="signinFieldView" destination="agU-I5-kBQ" id="hrZ-UG-lTB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="603" y="406"/>
         </scene>
         <!--Item-->
-        <scene sceneID="rts-1a-6ty">
+        <scene sceneID="hUm-SL-rgr">
             <objects>
-                <viewController id="841-TK-9ch" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GtH-Ze-XcV">
+                <viewController id="VdM-qX-9IJ" customClass="HomeScreenViewController" customModule="SantasHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Qb-V1-Kbr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TealBackground" id="zAz-x8-GRv">
+                                <rect key="frame" x="0.0" y="44" width="320" height="454"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Plus Button" id="Q6w-oF-Nzf">
+                                <rect key="frame" x="101" y="374" width="124" height="124"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Gift Bag" id="xDM-LV-t2X">
+                                <rect key="frame" x="20" y="517" width="17" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yXL-H4-tgZ">
+                                <rect key="frame" x="115" y="385" width="97" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="addButton:" destination="VdM-qX-9IJ" eventType="touchUpInside" id="PvR-nb-WDT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4HQ-JF-WJl">
+                                <rect key="frame" x="20" y="517" width="17" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="giftbagButton:" destination="VdM-qX-9IJ" eventType="touchUpInside" id="H2b-Xv-9Wo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="sFy-Ni-dte"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="pVP-w4-Z8Z"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XJM-Yq-OIJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Aa-j6-PwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="1119"/>
+            <point key="canvasLocation" x="1051" y="406"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cF9-Zm-KB7">
@@ -111,25 +172,23 @@
             </objects>
             <point key="canvasLocation" x="162" y="406"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="p1N-eY-ZMM">
+        <!--View Controller-->
+        <scene sceneID="yXf-8J-kvc">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="85h-wN-qhD" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="QwP-w5-ldA">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="841-TK-9ch" kind="relationship" relationship="viewControllers" id="Ypn-3h-uDT"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uPj-MO-ctC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="lIx-OJ-aCD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h6n-fW-OOm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eMA-ES-IAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="406"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Gift Bag" width="17" height="24"/>
+        <image name="Plus Button" width="124" height="124"/>
         <image name="Santa" width="263" height="190"/>
         <image name="Santa’s Helper" width="284" height="49"/>
         <image name="TealBackground" width="320" height="400"/>
