@@ -13,8 +13,6 @@ class HomeScreenViewController: UIViewController {
     @IBAction func addButton(sender: AnyObject) {
     }
 
-    @IBAction func giftbagButton(sender: AnyObject) {
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
