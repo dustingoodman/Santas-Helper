@@ -16,6 +16,9 @@
 		399962F21D958D9E001284AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399962F01D958D9E001284AF /* LaunchScreen.storyboard */; };
 		399962FD1D958D9E001284AF /* SantasHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399962FC1D958D9E001284AF /* SantasHelperTests.swift */; };
 		399963081D958D9E001284AF /* SantasHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399963071D958D9E001284AF /* SantasHelperUITests.swift */; };
+		A58FEEFE1DA42BF4003F93BF /* UPCScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58FEEFD1DA42BF4003F93BF /* UPCScannerViewController.swift */; };
+		A58FEF001DA42C0F003F93BF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58FEEFF1DA42C0F003F93BF /* AVFoundation.framework */; };
+		A58FEF021DA42ECD003F93BF /* AddToBagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58FEF011DA42ECD003F93BF /* AddToBagViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		278D67821DA3FED100593270 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
-		278D67841DA401E000593270 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		278D67821DA3FED100593270 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScreenViewController.swift; path = ../HomeScreenViewController.swift; sourceTree = "<group>"; };
+		278D67841DA401E000593270 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		399962E41D958D9E001284AF /* SantasHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SantasHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		399962E71D958D9E001284AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		399962E91D958D9E001284AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		399963031D958D9E001284AF /* SantasHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SantasHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		399963071D958D9E001284AF /* SantasHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantasHelperUITests.swift; sourceTree = "<group>"; };
 		399963091D958D9E001284AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A58FEEFD1DA42BF4003F93BF /* UPCScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCScannerViewController.swift; sourceTree = "<group>"; };
+		A58FEEFF1DA42C0F003F93BF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A58FEF011DA42ECD003F93BF /* AddToBagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToBagViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58FEF001DA42C0F003F93BF /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,8 +88,7 @@
 		399962DB1D958D9E001284AF = {
 			isa = PBXGroup;
 			children = (
-				278D67821DA3FED100593270 /* HomeScreenViewController.swift */,
-				278D67841DA401E000593270 /* LoginViewController.swift */,
+				A58FEEFF1DA42C0F003F93BF /* AVFoundation.framework */,
 				399962E61D958D9E001284AF /* SantasHelper */,
 				399962FB1D958D9E001284AF /* SantasHelperTests */,
 				399963061D958D9E001284AF /* SantasHelperUITests */,
@@ -135,6 +141,10 @@
 		399963151D958E01001284AF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A58FEF011DA42ECD003F93BF /* AddToBagViewController.swift */,
+				A58FEEFD1DA42BF4003F93BF /* UPCScannerViewController.swift */,
+				278D67841DA401E000593270 /* LoginViewController.swift */,
+				278D67821DA3FED100593270 /* HomeScreenViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -207,7 +217,7 @@
 				TargetAttributes = {
 					399962E31D958D9E001284AF = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 93A7J4ZUQW;
+						DevelopmentTeam = FVE4N9RUBQ;
 					};
 					399962F71D958D9E001284AF = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -271,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58FEF021DA42ECD003F93BF /* AddToBagViewController.swift in Sources */,
 				278D67851DA401E000593270 /* LoginViewController.swift in Sources */,
 				399962EA1D958D9E001284AF /* ViewController.swift in Sources */,
+				A58FEEFE1DA42BF4003F93BF /* UPCScannerViewController.swift in Sources */,
 				399962E81D958D9E001284AF /* AppDelegate.swift in Sources */,
 				278D67831DA3FED100593270 /* HomeScreenViewController.swift in Sources */,
 			);

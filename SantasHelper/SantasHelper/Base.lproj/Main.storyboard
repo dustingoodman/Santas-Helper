@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Zu2-g0-HO6">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -43,6 +43,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="VdM-qX-9IJ" kind="push" id="3hW-Xc-qFB"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="822-XE-2Yd">
                                         <rect key="frame" x="14" y="9" width="292" height="30"/>
@@ -100,6 +103,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="addButton:" destination="VdM-qX-9IJ" eventType="touchUpInside" id="PvR-nb-WDT"/>
+                                    <segue destination="da0-br-uHq" kind="modal" id="Vp7-Gw-hwG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4HQ-JF-WJl">
@@ -113,10 +117,44 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="pVP-w4-Z8Z"/>
+                    <navigationItem key="navigationItem" id="EBf-rB-5Ad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Aa-j6-PwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051" y="406"/>
+            <point key="canvasLocation" x="1083" y="406"/>
+        </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="87F-74-0R3">
+            <objects>
+                <viewController id="0nQ-Xq-ZPs" customClass="UPCScannerViewController" customModule="SantasHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dWe-Th-qhd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bcg-aY-eve"/>
+                    <connections>
+                        <segue destination="COV-z5-dX9" kind="push" identifier="addToBagSegue" id="087-vj-eL6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFw-Ex-eR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1607" y="1238"/>
+        </scene>
+        <!--Add To Bag View Controller-->
+        <scene sceneID="mTu-GH-yV1">
+            <objects>
+                <viewController id="COV-z5-dX9" customClass="AddToBagViewController" customModule="SantasHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TZH-DQ-0fq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q1O-Wa-3cq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D7T-M9-tNd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2222" y="1238"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cF9-Zm-KB7">
@@ -184,6 +222,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMA-ES-IAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="147" y="-234"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OVQ-Lb-7Cc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="da0-br-uHq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Z2-Y8-Omd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0nQ-Xq-ZPs" kind="relationship" relationship="rootViewController" id="wQX-P8-vXY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Th-nW-cYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1601" y="406"/>
         </scene>
     </scenes>
     <resources>

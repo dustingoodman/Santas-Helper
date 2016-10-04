@@ -1,21 +1,15 @@
 //
-//  HomeScreenViewController.swift
+//  AddToBagViewController.swift
 //  SantasHelper
 //
-//  Created by Camous, Dani on 10/4/16.
+//  Created by Dustin Goodman on 10/4/16.
 //  Copyright © 2016 Dustin Goodman. All rights reserved.
 //
 
 import UIKit
 
-class HomeScreenViewController: UIViewController, BarcodeDelegate {
-   
-    @IBAction func addButton(sender: AnyObject) {
-    }
+class AddToBagViewController: UIViewController, BarcodeDelegate {
 
-    @IBAction func giftbagButton(sender: AnyObject) {
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,19 +22,21 @@ class HomeScreenViewController: UIViewController, BarcodeDelegate {
     }
     
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        print("Segue!")
-        
-        
-        let DestViewController = segue.destinationViewController as! UINavigationController
-        _ = DestViewController.topViewController as! UPCScannerViewController
-        
-        
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
+    */
+
+    
+    
     
     func barcodeReaded(barcode: String) {
         print("Barcode leido: \(barcode)")
         //codeTextView.text = barcode
     }
-
 }
