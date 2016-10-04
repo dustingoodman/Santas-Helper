@@ -26,10 +26,10 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         initial = logoSuperView.frame.origin.y
-        offset = -20
+        offset = -25
         
         initialY = signinFieldView.frame.origin.y
-        offset = -50
+        offsetY = -62
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil)
         
@@ -39,10 +39,12 @@ class LoginViewController: UIViewController {
     }
     
     func keyboardWillShow (notification: NSNotification!) {
+        logoSuperView.frame.origin.y = initial + offset
         signinFieldView.frame.origin.y = initialY + offsetY
         }
     
     func keyboardWillHide (notification: NSNotification!) {
+        logoSuperView.frame.origin.y = initial
         signinFieldView.frame.origin.y = initialY
         }
 
