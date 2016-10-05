@@ -10,16 +10,19 @@ import UIKit
 
 class HomeScreenViewController: UIViewController {
    
-    @IBAction func addButton(sender: AnyObject) {
-    }
-
-    
+    @IBOutlet weak var settingsButton: UIButton!
+    @IBOutlet weak var santasBagButton: UIButton!
+    @IBOutlet weak var addItemButton: UIButton!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func addButton(sender: AnyObject) {
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
