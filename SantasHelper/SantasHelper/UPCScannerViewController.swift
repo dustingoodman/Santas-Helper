@@ -64,26 +64,45 @@ class UPCScannerViewController: UIViewController , AVCaptureMetadataOutputObject
     func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
         for metadata in metadataObjects {
             let readableObject = metadata as! AVMetadataMachineReadableCodeObject
-            let code = readableObject.stringValue
-            if !code.isEmpty {
+            code = (readableObject.stringValue)!
+            if code!.isEmpty {
+            }else{
                 self.captureSession.stopRunning()
                 //self.dismissViewControllerAnimated(true, completion: nil)
                 performSegueWithIdentifier("addToBagSegue", sender: nil)
-                self.delegate?.barcodeReaded(code)
+                self.delegate?.barcodeReaded(code!)
+                print(code!)
             }
         }
     }
 
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "addToBagSegue" {
+            
+            let destinationViewController = segue.destinationViewController as! UINavigationController
+            let addEventViewController = destinationViewController.topViewController as! AddToBagViewController
+            
+            addEventViewController.upcCode = code!
+
+            
+        }
+        
+        
+                //_ = destinationViewController.topViewController as! AddToBagViewController
+
+        
+        //let destinationViewController = segue.destinationViewController as! AddToBagViewController
+        
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

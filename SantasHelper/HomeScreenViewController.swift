@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeScreenViewController: UIViewController, BarcodeDelegate {
+class HomeScreenViewController: UIViewController {
    
     @IBAction func addButton(sender: AnyObject) {
     }
@@ -38,9 +38,5 @@ class HomeScreenViewController: UIViewController, BarcodeDelegate {
         
     }
     
-    func barcodeReaded(barcode: String) {
-        print("Barcode leido: \(barcode)")
-        //codeTextView.text = barcode
-    }
-
+    
 }

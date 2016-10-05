@@ -134,12 +134,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="Bcg-aY-eve"/>
                     <connections>
-                        <segue destination="COV-z5-dX9" kind="push" identifier="addToBagSegue" id="087-vj-eL6"/>
+                        <segue destination="haW-KA-zlX" kind="modal" identifier="addToBagSegue" id="087-vj-eL6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFw-Ex-eR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1607" y="1238"/>
+            <point key="canvasLocation" x="1601" y="1232"/>
         </scene>
         <!--Add To Bag View Controller-->
         <scene sceneID="mTu-GH-yV1">
@@ -148,13 +148,112 @@
                     <view key="view" contentMode="scaleToFill" id="TZH-DQ-0fq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="URs-8u-b1C">
+                                <rect key="frame" x="15" y="81" width="79" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cQ3-E7-Teu">
+                                <rect key="frame" x="107" y="81" width="193" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="b2z-sY-kZa">
+                                <rect key="frame" x="0.0" y="178" width="320" height="424"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50588235294117645" green="0.83137254901960778" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eYj-Us-YCE">
+                                    <size key="itemSize" width="290" height="83"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="santaBagsCell" id="TzY-Ql-v1Z" customClass="santaBagCollectionViewCell" customModule="SantasHelper">
+                                        <rect key="frame" x="15" y="0.0" width="290" height="83"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="83"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0NC-Uk-NbQ">
+                                                    <rect key="frame" x="8" y="8" width="63" height="63"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.47146242213474354" blue="0.59990401735270393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Szs-NO-zkU">
+                                                    <rect key="frame" x="80" y="8" width="166" height="63"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="santaBagImage" destination="0NC-Uk-NbQ" id="8CL-p7-u1M"/>
+                                            <outlet property="santaBagName" destination="Szs-NO-zkU" id="3RT-Hu-uCW"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Q1O-Wa-3cq"/>
+                    <connections>
+                        <outlet property="bagCollectionView" destination="b2z-sY-kZa" id="7x8-Kf-dRb"/>
+                        <outlet property="scannedImage" destination="URs-8u-b1C" id="7TS-fn-zwh"/>
+                        <outlet property="scannedProductTitle" destination="cQ3-E7-Teu" id="0tU-4N-H3D"/>
+                        <segue destination="mNe-aI-BR8" kind="push" identifier="productDetailSegue" id="NLh-2D-lrx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7T-M9-tNd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2222" y="1238"/>
+            <point key="canvasLocation" x="2591" y="1238"/>
+        </scene>
+        <!--Product Detail View Controller-->
+        <scene sceneID="fq7-1H-woa">
+            <objects>
+                <viewController id="mNe-aI-BR8" customClass="ProductDetailViewController" customModule="SantasHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UPE-Mz-BQi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ETS-xR-gQn">
+                                <rect key="frame" x="20" y="117" width="280" height="254"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TLu-K7-r9n">
+                                <rect key="frame" x="20" y="81" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" id="SMi-2A-WK7">
+                                <rect key="frame" x="20" y="387" width="280" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hgG-Rj-EVM"/>
+                    <connections>
+                        <outlet property="ProductImage" destination="ETS-xR-gQn" id="pPa-h9-95s"/>
+                        <outlet property="ProductTitle" destination="TLu-K7-r9n" id="zBE-ID-93o"/>
+                        <outlet property="SantaMessage" destination="SMi-2A-WK7" id="46s-4p-mpK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qxi-zD-ZBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3092" y="1238"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cF9-Zm-KB7">
@@ -241,6 +340,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Th-nW-cYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1601" y="406"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gri-8T-mjb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="haW-KA-zlX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="yBU-kt-6YD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="egl-pV-lQc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="COV-z5-dX9" kind="relationship" relationship="rootViewController" id="HLx-yP-tfa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWL-bl-yQX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2166" y="1238"/>
         </scene>
     </scenes>
     <resources>

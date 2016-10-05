@@ -16,9 +16,12 @@
 		399962F21D958D9E001284AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399962F01D958D9E001284AF /* LaunchScreen.storyboard */; };
 		399962FD1D958D9E001284AF /* SantasHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399962FC1D958D9E001284AF /* SantasHelperTests.swift */; };
 		399963081D958D9E001284AF /* SantasHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399963071D958D9E001284AF /* SantasHelperUITests.swift */; };
+		A58D7B991DA53BA0005C2BE4 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D7B981DA53BA0005C2BE4 /* StaticData.swift */; };
+		A58D7B9B1DA581DF005C2BE4 /* santaBagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D7B9A1DA581DF005C2BE4 /* santaBagCollectionViewCell.swift */; };
 		A58FEEFE1DA42BF4003F93BF /* UPCScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58FEEFD1DA42BF4003F93BF /* UPCScannerViewController.swift */; };
 		A58FEF001DA42C0F003F93BF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58FEEFF1DA42C0F003F93BF /* AVFoundation.framework */; };
 		A58FEF021DA42ECD003F93BF /* AddToBagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58FEF011DA42ECD003F93BF /* AddToBagViewController.swift */; };
+		A5F16CC51DA59EB6002C9067 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F16CC41DA59EB6002C9067 /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +57,12 @@
 		399963031D958D9E001284AF /* SantasHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SantasHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		399963071D958D9E001284AF /* SantasHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantasHelperUITests.swift; sourceTree = "<group>"; };
 		399963091D958D9E001284AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A58D7B981DA53BA0005C2BE4 /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
+		A58D7B9A1DA581DF005C2BE4 /* santaBagCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = santaBagCollectionViewCell.swift; sourceTree = "<group>"; };
 		A58FEEFD1DA42BF4003F93BF /* UPCScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCScannerViewController.swift; sourceTree = "<group>"; };
 		A58FEEFF1DA42C0F003F93BF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A58FEF011DA42ECD003F93BF /* AddToBagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToBagViewController.swift; sourceTree = "<group>"; };
+		A5F16CC41DA59EB6002C9067 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,10 +147,13 @@
 		399963151D958E01001284AF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A5F16CC41DA59EB6002C9067 /* ProductDetailViewController.swift */,
+				A58D7B9A1DA581DF005C2BE4 /* santaBagCollectionViewCell.swift */,
 				A58FEF011DA42ECD003F93BF /* AddToBagViewController.swift */,
 				A58FEEFD1DA42BF4003F93BF /* UPCScannerViewController.swift */,
 				278D67841DA401E000593270 /* LoginViewController.swift */,
 				278D67821DA3FED100593270 /* HomeScreenViewController.swift */,
+				A58D7B981DA53BA0005C2BE4 /* StaticData.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -281,11 +290,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58D7B991DA53BA0005C2BE4 /* StaticData.swift in Sources */,
 				A58FEF021DA42ECD003F93BF /* AddToBagViewController.swift in Sources */,
+				A5F16CC51DA59EB6002C9067 /* ProductDetailViewController.swift in Sources */,
 				278D67851DA401E000593270 /* LoginViewController.swift in Sources */,
 				399962EA1D958D9E001284AF /* ViewController.swift in Sources */,
 				A58FEEFE1DA42BF4003F93BF /* UPCScannerViewController.swift in Sources */,
 				399962E81D958D9E001284AF /* AppDelegate.swift in Sources */,
+				A58D7B9B1DA581DF005C2BE4 /* santaBagCollectionViewCell.swift in Sources */,
 				278D67831DA3FED100593270 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
