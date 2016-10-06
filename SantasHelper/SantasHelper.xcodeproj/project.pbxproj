@@ -10,6 +10,8 @@
 		278D67831DA3FED100593270 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278D67821DA3FED100593270 /* HomeScreenViewController.swift */; };
 		278D67851DA401E000593270 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278D67841DA401E000593270 /* LoginViewController.swift */; };
 		278D67871DA4441700593270 /* settingsMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278D67861DA4441700593270 /* settingsMainViewController.swift */; };
+		278D67891DA5579100593270 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278D67881DA5579100593270 /* BaseTransition.swift */; };
+		278D678B1DA557A100593270 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278D678A1DA557A100593270 /* FadeTransition.swift */; };
 		399962E81D958D9E001284AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399962E71D958D9E001284AF /* AppDelegate.swift */; };
 		399962EA1D958D9E001284AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399962E91D958D9E001284AF /* ViewController.swift */; };
 		399962ED1D958D9E001284AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399962EB1D958D9E001284AF /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 		278D67821DA3FED100593270 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		278D67841DA401E000593270 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		278D67861DA4441700593270 /* settingsMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsMainViewController.swift; sourceTree = "<group>"; };
+		278D67881DA5579100593270 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		278D678A1DA557A100593270 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 		399962E41D958D9E001284AF /* SantasHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SantasHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		399962E71D958D9E001284AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		399962E91D958D9E001284AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 		399962E61D958D9E001284AF /* SantasHelper */ = {
 			isa = PBXGroup;
 			children = (
+				278D67881DA5579100593270 /* BaseTransition.swift */,
+				278D678A1DA557A100593270 /* FadeTransition.swift */,
 				399963151D958E01001284AF /* View Controllers */,
 				399962E71D958D9E001284AF /* AppDelegate.swift */,
 				399962E91D958D9E001284AF /* ViewController.swift */,
@@ -275,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				278D67851DA401E000593270 /* LoginViewController.swift in Sources */,
+				278D678B1DA557A100593270 /* FadeTransition.swift in Sources */,
+				278D67891DA5579100593270 /* BaseTransition.swift in Sources */,
 				278D67871DA4441700593270 /* settingsMainViewController.swift in Sources */,
 				399962EA1D958D9E001284AF /* ViewController.swift in Sources */,
 				399962E81D958D9E001284AF /* AppDelegate.swift in Sources */,
