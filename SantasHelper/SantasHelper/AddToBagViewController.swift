@@ -43,9 +43,13 @@ class AddToBagViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     func loadScannedProduct(){
-        if upcCode == "0070612172174"{
+        if upcCode == "0673419247092"{
         scannedImage.image = myProducts[0].image
         scannedProductTitle.text = myProducts[0].productName
+        }else if upcCode == "0673419247085"{
+            scannedImage.image = myProducts[1].image
+            scannedProductTitle.text = myProducts[1].productName
+            
         }
         
     }

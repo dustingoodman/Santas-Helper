@@ -14,6 +14,7 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var ProductImage: UIImageView!
     @IBOutlet weak var SantaMessage: UITextField!
     @IBOutlet weak var SantaMessageBlock: UIView!
+    @IBOutlet weak var ModalBackground: UIView!
     
     var upcCode:String!
     var initialY: CGFloat!
@@ -22,8 +23,7 @@ class ProductDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        ProductTitle.text = myProducts[0].productName
-        ProductImage.image = myProducts[0].image
+       loadScannedProduct()
         
         navigationItem.title = "Jake's"
         
@@ -32,6 +32,7 @@ class ProductDetailViewController: UIViewController {
         SantaMessage.layer.borderWidth = 1
         
         initialY = SantaMessageBlock.frame.origin.y
+        ModalBackground.alpha = 0
         offsetY = -200
         
          NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil)
@@ -46,9 +47,22 @@ class ProductDetailViewController: UIViewController {
         UIView.animateWithDuration(0.25, animations: { () -> Void in
             
             self.SantaMessageBlock.frame.origin.y = self.initialY + self.offsetY
+             self.ModalBackground.alpha = 0.5
             
             
         })
+        
+    }
+    
+    func loadScannedProduct(){
+        if upcCode == "0673419247092"{
+            ProductTitle.text = myProducts[0].productName
+            ProductImage.image = myProducts[0].image
+        }else if upcCode == "0673419247085"{
+            ProductTitle.text = myProducts[1].productName
+            ProductImage.image = myProducts[1].image
+            
+        }
         
     }
 

@@ -8,6 +8,8 @@
 
 import UIKit
 
+var firstTime = false
+
 class HomeScreenViewController: UIViewController {
    
     
@@ -18,6 +20,8 @@ class HomeScreenViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(firstTime == false){
          DeerImage.alpha = 0
         SantaImage.alpha = 0
         delay(0.5, closure: { () -> () in
@@ -26,10 +30,17 @@ class HomeScreenViewController: UIViewController {
             self.SantaImage.frame.origin.x = 0
             self.DeerImage.alpha = 1
             self.SantaImage.alpha = 1
+            
+            firstTime = true
         
         
         })
         })
+        }else{
+            self.DeerImage.frame.origin.x = 135
+            self.SantaImage.frame.origin.x = 0
+            
+        }
 
         // Do any additional setup after loading the view.
     }

@@ -30,7 +30,7 @@ struct santaBags {
 
 
 var myProducts = [(image:UIImage(named: "wookiee.jpg")!, productName: "LEGO Star Wars Wookiee™ Gunship 75129", productDetail: "", productPrice: "7.99", productURL: "", productUPC: "673419247085"),
-                  (image:UIImage(named: "wookiee.jpg")!, productName: "LEGO Star Wars Wookiee™ Gunship 75129", productDetail: "", productPrice: "7.99", productURL: "", productUPC: "673419247085")]
+                  (image:UIImage(named: "tifighter.jpg")!, productName: "LEGO Star Wars TIE Advanced Prototype™ 75128", productDetail: "", productPrice: "7.99", productURL: "", productUPC: "673419247085")]
 
 
 
