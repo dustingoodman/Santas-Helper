@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Zu2-g0-HO6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="JK2-Ga-fb7">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -150,19 +150,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="URs-8u-b1C">
-                                <rect key="frame" x="15" y="81" width="79" height="78"/>
+                            <view contentMode="scaleToFill" id="gH8-jw-zpD">
+                                <rect key="frame" x="10" y="0.0" width="320" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cQ3-E7-Teu">
-                                <rect key="frame" x="107" y="81" width="193" height="78"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Select Bag" textAlignment="center" minimumFontSize="17" id="2vF-2J-k4V">
+                                        <rect key="frame" x="96" y="33" width="98" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="0.65098039220000004" green="0.6588235294" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="a4Q-2j-eHl">
+                                <rect key="frame" x="0.0" y="72" width="320" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="URs-8u-b1C">
+                                        <rect key="frame" x="18" y="4" width="79" height="78"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cQ3-E7-Teu">
+                                        <rect key="frame" x="110" y="2" width="193" height="78"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="AS1-3l-GKe">
+                                <rect key="frame" x="0.0" y="162" width="320" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50588235294117645" green="0.83137254901960778" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="b2z-sY-kZa">
-                                <rect key="frame" x="0.0" y="178" width="320" height="424"/>
+                                <rect key="frame" x="0.0" y="184" width="320" height="453"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50588235294117645" green="0.83137254901960778" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eYj-Us-YCE">
@@ -180,14 +206,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0NC-Uk-NbQ">
-                                                    <rect key="frame" x="8" y="8" width="63" height="63"/>
+                                                    <rect key="frame" x="18" y="22" width="40" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="1" green="0.47146242213474354" blue="0.59990401735270393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Szs-NO-zkU">
-                                                    <rect key="frame" x="80" y="8" width="166" height="63"/>
+                                                    <rect key="frame" x="80" y="10" width="166" height="63"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -226,33 +252,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ETS-xR-gQn">
-                                <rect key="frame" x="20" y="65" width="280" height="254"/>
+                                <rect key="frame" x="14" y="65" width="292" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TLu-K7-r9n">
-                                <rect key="frame" x="20" y="29" width="280" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TLu-K7-r9n">
+                                <rect key="frame" x="14" y="35" width="292" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" id="SMi-2A-WK7">
-                                <rect key="frame" x="20" y="335" width="280" height="94"/>
+                            <view contentMode="scaleToFill" id="ljO-oe-uvy">
+                                <rect key="frame" x="0.0" y="327" width="320" height="241"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SxR-yY-oqd">
-                                <rect key="frame" x="14" y="454" width="292" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.50588235290000005" green="0.83137254900000002" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Send to Santa">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="mCW-1E-RWm" kind="modal" id="mvD-zj-xhF"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="Send a special Message to Santa" minimumFontSize="14" id="SMi-2A-WK7">
+                                        <rect key="frame" x="14" y="8" width="292" height="94"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SxR-yY-oqd">
+                                        <rect key="frame" x="14" y="135" width="292" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.50588235290000005" green="0.83137254900000002" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Send to Santa">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="mCW-1E-RWm" kind="modal" id="mvD-zj-xhF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -261,6 +294,7 @@
                         <outlet property="ProductImage" destination="ETS-xR-gQn" id="pPa-h9-95s"/>
                         <outlet property="ProductTitle" destination="TLu-K7-r9n" id="zBE-ID-93o"/>
                         <outlet property="SantaMessage" destination="SMi-2A-WK7" id="46s-4p-mpK"/>
+                        <outlet property="SantaMessageBlock" destination="ljO-oe-uvy" id="m7i-k6-CyF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qxi-zD-ZBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -274,8 +308,21 @@
                     <view key="view" contentMode="scaleToFill" id="qbN-tK-RS7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="santaWorkshop" id="LdA-ZC-y0l">
+                                <rect key="frame" x="0.0" y="150" width="320" height="418"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SnowFlakes" id="RJs-vh-c1q">
+                                <rect key="frame" x="0.0" y="-44" width="320" height="300"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50588235294117645" green="0.83137254901960778" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="eP5-xi-i9U" kind="modal" identifier="ResetSegue" id="hrM-Pf-ZNw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qvK-P8-IYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -336,10 +383,10 @@
             </objects>
             <point key="canvasLocation" x="2166" y="1238"/>
         </scene>
-        <!--Settings Main View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="MYi-Lh-2sK">
             <objects>
-                <viewController id="5aE-H3-HIp" customClass="settingsMainViewController" customModule="SantasHelper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5aE-H3-HIp" customClass="MenuViewController" customModule="SantasHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="48A-Jc-24b">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -380,28 +427,28 @@
                                     <color key="titleColor" red="0.65098039220000004" green="0.6588235294" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" id="Z8B-yS-iFA">
-                                <rect key="frame" x="20" y="183" width="245" height="1"/>
+                            <view alpha="0.14999999999999999" contentMode="scaleToFill" id="Z8B-yS-iFA">
+                                <rect key="frame" x="20" y="183" width="282" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" id="Ffl-2Y-5wk">
-                                <rect key="frame" x="20" y="232" width="245" height="1"/>
+                            <view alpha="0.14999999999999999" contentMode="scaleToFill" id="Ffl-2Y-5wk">
+                                <rect key="frame" x="20" y="232" width="282" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" id="12m-ek-82d">
-                                <rect key="frame" x="20" y="281" width="245" height="1"/>
+                            <view alpha="0.14999999999999999" contentMode="scaleToFill" id="12m-ek-82d">
+                                <rect key="frame" x="20" y="281" width="282" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" id="DUN-Dp-VWy">
-                                <rect key="frame" x="20" y="328" width="245" height="1"/>
+                            <view alpha="0.14999999999999999" contentMode="scaleToFill" id="DUN-Dp-VWy">
+                                <rect key="frame" x="20" y="328" width="282" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0LV-3O-EL9">
-                                <rect key="frame" x="18" y="503" width="242" height="44"/>
+                                <rect key="frame" x="18" y="503" width="282" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.35294117650000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
@@ -421,16 +468,28 @@
                                     <color key="titleColor" red="0.65098039220000004" green="0.6588235294" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="closebutton" id="yGh-l2-bUd">
+                                <rect key="frame" x="274" y="32" width="28" height="28"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8ev-vq-LHN">
+                                <rect key="frame" x="273" y="30" width="30" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="CloseButton:" destination="5aE-H3-HIp" eventType="touchUpInside" id="uxg-Zw-fYS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <connections>
                         <outlet property="signoutButton" destination="0LV-3O-EL9" id="rsC-1V-oSC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eae-3D-8Eb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="667" y="1219"/>
+            <point key="canvasLocation" x="2199" y="-317"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="eWk-jt-tlI">
@@ -441,31 +500,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="0fy-Fi-cMs" userLabel="signinFieldView">
-                                <rect key="frame" x="0.0" y="289" width="320" height="142"/>
+                                <rect key="frame" x="0.0" y="210" width="320" height="221"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UWy-vj-D01">
-                                        <rect key="frame" x="14" y="78" width="292" height="44"/>
+                                        <rect key="frame" x="14" y="157" width="292" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.50588235290000005" green="0.83137254900000002" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="eP5-xi-i9U" kind="push" id="0AE-hU-efD"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" id="uG8-RE-cxf">
-                                        <rect key="frame" x="14" y="43" width="292" height="30"/>
+                                        <rect key="frame" x="14" y="107" width="292" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="WmA-3y-nmj">
-                                        <rect key="frame" x="14" y="14" width="292" height="30"/>
+                                        <rect key="frame" x="14" y="63" width="292" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                     </textField>
                                     <view contentMode="scaleToFill" id="VNt-Km-YRJ">
-                                        <rect key="frame" x="14" y="43" width="292" height="1"/>
+                                        <rect key="frame" x="14" y="98" width="292" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.84961939099999995" green="0.84961939099999995" blue="0.84961939099999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
@@ -473,23 +535,28 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="Tdy-J1-GEB" userLabel="logoView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="281"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="253"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TealBackground" id="xI4-he-9aI">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="235"/>
+                                    <view contentMode="scaleToFill" id="dQI-sc-1Mx">
+                                        <rect key="frame" x="0.0" y="220" width="322" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Santa" id="AKc-bs-fCd">
-                                        <rect key="frame" x="29" y="90" width="263" height="189"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Santa’s Helper" id="VLQ-wQ-pUZ">
+                                        <rect key="frame" x="18" y="27" width="282" height="47"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Santa’s Helper" id="VLQ-wQ-pUZ">
-                                        <rect key="frame" x="18" y="67" width="282" height="47"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Santa" id="AKc-bs-fCd">
+                                        <rect key="frame" x="29" y="76" width="263" height="189"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SnowFlakes" id="Duv-N8-46V">
+                                        <rect key="frame" x="-2" y="-33" width="320" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.50588235294117645" green="0.83137254901960778" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="J5c-5v-tEd">
                                 <rect key="frame" x="-1" y="526" width="321" height="1"/>
@@ -513,20 +580,23 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="1IC-rZ-cSA"/>
                     <connections>
+                        <outlet property="SantaHelperLogo" destination="VLQ-wQ-pUZ" id="3K7-Ne-IE6"/>
+                        <outlet property="SantaImage" destination="AKc-bs-fCd" id="T08-8E-az3"/>
                         <outlet property="emailfield" destination="WmA-3y-nmj" id="ZoV-jU-MiY"/>
                         <outlet property="logoSuperView" destination="Tdy-J1-GEB" id="QNR-gO-cfx"/>
                         <outlet property="passwordField" destination="uG8-RE-cxf" id="aP8-NP-dKy"/>
+                        <outlet property="santaWhiteBg" destination="dQI-sc-1Mx" id="Hcm-K2-VYD"/>
                         <outlet property="signinButton" destination="UWy-vj-D01" id="RW4-JQ-wL0"/>
                         <outlet property="signinFieldView" destination="0fy-Fi-cMs" id="SSD-63-5XD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Dj-V9-Cht" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="607" y="-226"/>
+            <point key="canvasLocation" x="1137" y="-327"/>
         </scene>
         <!--Santa's Bag-->
         <scene sceneID="7JL-dD-8nK">
@@ -536,72 +606,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TealBackground" id="Hxo-ps-YdP">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Plus Button" id="QPe-4E-Ct0">
                                 <rect key="frame" x="101" y="429" width="124" height="124"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Santa-1" id="Vcq-vb-eh6">
-                                <rect key="frame" x="0.0" y="101" width="148" height="240"/>
+                                <rect key="frame" x="-148" y="101" width="148" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Deer" id="Aqa-9j-cDW">
-                                <rect key="frame" x="135" y="196" width="185" height="273"/>
+                                <rect key="frame" x="324" y="196" width="185" height="273"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="Yxn-bg-stv">
-                                <rect key="frame" x="0.0" y="20" width="320" height="45"/>
+                                <rect key="frame" x="0.0" y="-6" width="320" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Gift Bag" id="ObX-FC-L5t">
-                                        <rect key="frame" x="290" y="7" width="17" height="24"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings_tab" id="jx0-wB-7hj">
-                                        <rect key="frame" x="8" y="7" width="30" height="30"/>
+                                        <rect key="frame" x="8" y="33" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5RY-WS-dO9">
-                                        <rect key="frame" x="277" y="8" width="43" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DAR-HJ-S2k">
-                                        <rect key="frame" x="0.0" y="7" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="33" width="46" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Santa's Bag" textAlignment="natural" minimumFontSize="17" id="wOB-Ue-qih">
-                                        <rect key="frame" x="111" y="7" width="98" height="30"/>
+                                        <rect key="frame" x="111" y="33" width="98" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.65098039220000004" green="0.6588235294" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="addbutton" id="7qh-pv-n4t">
+                                        <rect key="frame" x="292" y="42" width="18" height="18"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SnowFlakes" id="VSr-hJ-v2I">
+                                <rect key="frame" x="-1" y="66" width="320" height="300"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SnowFlakes" id="N9q-Ew-yyR">
+                                <rect key="frame" x="0.0" y="319" width="320" height="300"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d5u-vg-aUb">
                                 <rect key="frame" x="115" y="440" width="97" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="addButton:" destination="eP5-xi-i9U" eventType="touchUpInside" id="E6O-rE-kSb"/>
+                                    <segue destination="da0-br-uHq" kind="modal" id="Raw-AQ-HMQ"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.50588235294117645" green="0.83137254901960778" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Santa's Bag" id="qOv-28-PtG"/>
                     <connections>
-                        <outlet property="addItemButton" destination="d5u-vg-aUb" id="ttS-Lx-1M5"/>
-                        <outlet property="santasBagButton" destination="5RY-WS-dO9" id="lNi-J0-PbA"/>
-                        <outlet property="settingsButton" destination="DAR-HJ-S2k" id="wpK-CM-9KA"/>
+                        <outlet property="DeerImage" destination="Aqa-9j-cDW" id="Vu6-BE-mks"/>
+                        <outlet property="SantaImage" destination="Vcq-vb-eh6" id="VCr-v3-VSq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8eF-1l-SEP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1075" y="-254"/>
+            <point key="canvasLocation" x="1719" y="-327"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bLR-cz-fdZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="JK2-Ga-fb7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sVD-Xc-q6p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qPS-uI-8Ks" kind="relationship" relationship="rootViewController" id="M9u-rp-FvK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0nh-yS-yNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605" y="-327"/>
         </scene>
     </scenes>
     <resources>
@@ -612,7 +699,15 @@
         <image name="Santa" width="263" height="190"/>
         <image name="Santa-1" width="148" height="240"/>
         <image name="Santa’s Helper" width="284" height="49"/>
+        <image name="SnowFlakes" width="320" height="300"/>
         <image name="TealBackground" width="320" height="400"/>
-        <image name="settings_tab" width="320" height="400"/>
+        <image name="addbutton" width="18" height="18"/>
+        <image name="closebutton" width="28" height="28"/>
+        <image name="santaWorkshop" width="320" height="418"/>
+        <image name="settings_tab" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Raw-AQ-HMQ"/>
+        <segue reference="0AE-hU-efD"/>
+    </inferredMetricsTieBreakers>
 </document>

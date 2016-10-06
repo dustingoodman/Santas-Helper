@@ -21,6 +21,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailfield: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var signinButton: UIButton!
+    @IBOutlet weak var santaWhiteBg: UIView!
+    @IBOutlet weak var SantaHelperLogo: UIImageView!
+    @IBOutlet weak var SantaImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +32,13 @@ class LoginViewController: UIViewController {
         offset = -45
         
         initialY = signinFieldView.frame.origin.y
-        offsetY = -68
+        offsetY = -200
+        
+        
+        
+        
+       //signinFieldView.alpha = 0
+        
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil)
         
@@ -40,11 +49,20 @@ class LoginViewController: UIViewController {
     func keyboardWillShow (notification: NSNotification!) {
         logoSuperView.frame.origin.y = initial + offset
         signinFieldView.frame.origin.y = initialY + offsetY
+        
+        UIView.animateWithDuration(0.25, animations: { () -> Void in
+            
+            self.logoSuperView.alpha = 0
+            self.santaWhiteBg.alpha = 0
+            
+            
+        })
+        
     }
     
     func keyboardWillHide (notification: NSNotification!) {
-        logoSuperView.frame.origin.y = initial
-        signinFieldView.frame.origin.y = initialY
+        //logoSuperView.frame.origin.y = initial
+        //signinFieldView.frame.origin.y = initialY
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

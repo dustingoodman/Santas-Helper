@@ -10,14 +10,26 @@ import UIKit
 
 class HomeScreenViewController: UIViewController {
    
-    @IBAction func addButton(sender: AnyObject) {
-    }
-
-    @IBAction func giftbagButton(sender: AnyObject) {
-    }
     
+
+    @IBOutlet weak var SantaImage: UIImageView!
+    @IBOutlet weak var DeerImage: UIImageView!
+    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+         DeerImage.alpha = 0
+        SantaImage.alpha = 0
+        delay(0.5, closure: { () -> () in
+        UIView.animateWithDuration(0.25, animations: { () -> Void in
+            self.DeerImage.frame.origin.x = 135
+            self.SantaImage.frame.origin.x = 0
+            self.DeerImage.alpha = 1
+            self.SantaImage.alpha = 1
+        
+        
+        })
+        })
 
         // Do any additional setup after loading the view.
     }

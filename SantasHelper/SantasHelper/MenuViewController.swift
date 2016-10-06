@@ -1,18 +1,19 @@
 //
-//  SentConfirmationViewController.swift
+//  MenuViewController.swift
 //  SantasHelper
 //
-//  Created by Dustin Goodman on 10/5/16.
+//  Created by Dustin Goodman on 10/6/16.
 //  Copyright © 2016 Dustin Goodman. All rights reserved.
 //
 
 import UIKit
 
-class SentConfirmationViewController: UIViewController {
+class MenuViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        resetView()
 
         // Do any additional setup after loading the view.
     }
@@ -22,18 +23,9 @@ class SentConfirmationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func resetView() {
-        
-        delay(3, closure: { () -> () in
-            self.performSegueWithIdentifier("ResetSegue", sender: nil)
-            
-        })
-     
-        
+    @IBAction func CloseButton(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: {});
     }
-    
-    
-    
 
     /*
     // MARK: - Navigation

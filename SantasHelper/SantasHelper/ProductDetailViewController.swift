@@ -13,21 +13,45 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var ProductTitle: UILabel!
     @IBOutlet weak var ProductImage: UIImageView!
     @IBOutlet weak var SantaMessage: UITextField!
+    @IBOutlet weak var SantaMessageBlock: UIView!
     
     var upcCode:String!
+    var initialY: CGFloat!
+    var offsetY: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SantaMessage.text = "Send a special Message to Santa"
-        
+                
         ProductTitle.text = myProducts[0].productName
         ProductImage.image = myProducts[0].image
         
         navigationItem.title = "Jake's"
         
+        SantaMessage.layer.cornerRadius = 3
+        SantaMessage.layer.borderColor = (UIColor(red: 217/255, green: 217/255, blue: 217/255, alpha: 1)).CGColor
+        SantaMessage.layer.borderWidth = 1
+        
+        initialY = SantaMessageBlock.frame.origin.y
+        offsetY = -200
+        
+         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil)
        
         // Do any additional setup after loading the view.
     }
+    
+    func keyboardWillShow (notification: NSNotification!) {
+        
+       
+        
+        UIView.animateWithDuration(0.25, animations: { () -> Void in
+            
+            self.SantaMessageBlock.frame.origin.y = self.initialY + self.offsetY
+            
+            
+        })
+        
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

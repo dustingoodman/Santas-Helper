@@ -35,6 +35,6 @@ var myProducts = [(image:UIImage(named: "wookiee.jpg")!, productName: "LEGO Star
 
 
 
-var myBags = [(icon:UIImage(named: "santaBag.png")!, bagName: "Jake's"),
-              (icon:UIImage(named: "santaBag.png")!, bagName: "Josh's")
+var myBags = [(icon:UIImage(named: "santabag.png")!, bagName: "Jake's"),
+              (icon:UIImage(named: "santabag.png")!, bagName: "Josh's")
 ]
