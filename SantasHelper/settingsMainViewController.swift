@@ -9,9 +9,8 @@
 import UIKit
 
 class settingsMainViewController: UIViewController {
-
-    @IBOutlet weak var signoutButton: UIButton!
     
+    @IBOutlet weak var signoutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +18,7 @@ class settingsMainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func didPressSignout(sender: AnyObject) {dismissViewControllerAnimated(true) {
-            }
-        }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
