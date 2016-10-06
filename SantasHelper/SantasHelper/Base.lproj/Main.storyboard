@@ -133,6 +133,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bcg-aY-eve"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <segue destination="haW-KA-zlX" kind="modal" identifier="addToBagSegue" id="087-vj-eL6"/>
                     </connections>
@@ -141,7 +142,7 @@
             </objects>
             <point key="canvasLocation" x="1601" y="1232"/>
         </scene>
-        <!--Add To Bag View Controller-->
+        <!--Add to Bag-->
         <scene sceneID="mTu-GH-yV1">
             <objects>
                 <viewController id="COV-z5-dX9" customClass="AddToBagViewController" customModule="SantasHelper" customModuleProvider="target" sceneMemberID="viewController">
@@ -204,7 +205,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Q1O-Wa-3cq"/>
+                    <navigationItem key="navigationItem" title="Add to Bag" id="Q1O-Wa-3cq"/>
                     <connections>
                         <outlet property="bagCollectionView" destination="b2z-sY-kZa" id="7x8-Kf-dRb"/>
                         <outlet property="scannedImage" destination="URs-8u-b1C" id="7TS-fn-zwh"/>
@@ -225,22 +226,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ETS-xR-gQn">
-                                <rect key="frame" x="20" y="117" width="280" height="254"/>
+                                <rect key="frame" x="20" y="65" width="280" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TLu-K7-r9n">
-                                <rect key="frame" x="20" y="81" width="280" height="21"/>
+                                <rect key="frame" x="20" y="29" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" id="SMi-2A-WK7">
-                                <rect key="frame" x="20" y="387" width="280" height="136"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" id="SMi-2A-WK7">
+                                <rect key="frame" x="20" y="335" width="280" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SxR-yY-oqd">
+                                <rect key="frame" x="14" y="454" width="292" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50588235290000005" green="0.83137254900000002" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Send to Santa">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mCW-1E-RWm" kind="modal" id="mvD-zj-xhF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -255,41 +267,19 @@
             </objects>
             <point key="canvasLocation" x="3092" y="1238"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="cF9-Zm-KB7">
+        <!--Sent Confirmation View Controller-->
+        <scene sceneID="W6B-g2-O1m">
             <objects>
-                <viewController id="FtD-0Y-c9U" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1IH-q7-qfH">
+                <viewController id="mCW-1E-RWm" customClass="SentConfirmationViewController" customModule="SantasHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qbN-tK-RS7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TealBackground" id="LAX-2b-Zwq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="237"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Santa" id="dmM-U1-ean">
-                                <rect key="frame" x="29" y="91" width="263" height="190"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Santa’s Helper" id="ERb-OV-8Bm">
-                                <rect key="frame" x="25" y="26" width="284" height="49"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MGW-DJ-7dy">
-                                <rect key="frame" x="14" y="415" width="292" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.50588235290000005" green="0.83137254900000002" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l7I-cV-qxU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvK-P8-IYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="603" y="1099"/>
+            <point key="canvasLocation" x="3595" y="1766"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lb7-1F-Qur">
@@ -308,20 +298,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svT-kh-Vff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="162" y="406"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="yXf-8J-kvc">
-            <objects>
-                <viewController id="lIx-OJ-aCD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="h6n-fW-OOm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eMA-ES-IAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="147" y="-234"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OVQ-Lb-7Cc">
@@ -344,7 +320,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Gri-8T-mjb">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="haW-KA-zlX" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="haW-KA-zlX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="yBU-kt-6YD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="egl-pV-lQc">

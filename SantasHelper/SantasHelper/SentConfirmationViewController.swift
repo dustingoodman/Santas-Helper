@@ -1,5 +1,5 @@
 //
-//  ProductDetailViewController.swift
+//  SentConfirmationViewController.swift
 //  SantasHelper
 //
 //  Created by Dustin Goodman on 10/5/16.
@@ -8,24 +8,11 @@
 
 import UIKit
 
-class ProductDetailViewController: UIViewController {
+class SentConfirmationViewController: UIViewController {
 
-    @IBOutlet weak var ProductTitle: UILabel!
-    @IBOutlet weak var ProductImage: UIImageView!
-    @IBOutlet weak var SantaMessage: UITextField!
-    
-    var upcCode:String!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        SantaMessage.text = "Send a special Message to Santa"
-        
-        ProductTitle.text = myProducts[0].productName
-        ProductImage.image = myProducts[0].image
-        
-        navigationItem.title = "Jake's"
-        
-       
+
         // Do any additional setup after loading the view.
     }
 

@@ -21,6 +21,7 @@
 		A58FEEFE1DA42BF4003F93BF /* UPCScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58FEEFD1DA42BF4003F93BF /* UPCScannerViewController.swift */; };
 		A58FEF001DA42C0F003F93BF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58FEEFF1DA42C0F003F93BF /* AVFoundation.framework */; };
 		A58FEF021DA42ECD003F93BF /* AddToBagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58FEF011DA42ECD003F93BF /* AddToBagViewController.swift */; };
+		A590A8081DA5D9C40049D51D /* SentConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590A8071DA5D9C40049D51D /* SentConfirmationViewController.swift */; };
 		A5F16CC51DA59EB6002C9067 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F16CC41DA59EB6002C9067 /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		A58FEEFD1DA42BF4003F93BF /* UPCScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCScannerViewController.swift; sourceTree = "<group>"; };
 		A58FEEFF1DA42C0F003F93BF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A58FEF011DA42ECD003F93BF /* AddToBagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToBagViewController.swift; sourceTree = "<group>"; };
+		A590A8071DA5D9C40049D51D /* SentConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentConfirmationViewController.swift; sourceTree = "<group>"; };
 		A5F16CC41DA59EB6002C9067 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +149,7 @@
 		399963151D958E01001284AF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A590A8071DA5D9C40049D51D /* SentConfirmationViewController.swift */,
 				A5F16CC41DA59EB6002C9067 /* ProductDetailViewController.swift */,
 				A58D7B9A1DA581DF005C2BE4 /* santaBagCollectionViewCell.swift */,
 				A58FEF011DA42ECD003F93BF /* AddToBagViewController.swift */,
@@ -295,6 +298,7 @@
 				A5F16CC51DA59EB6002C9067 /* ProductDetailViewController.swift in Sources */,
 				278D67851DA401E000593270 /* LoginViewController.swift in Sources */,
 				399962EA1D958D9E001284AF /* ViewController.swift in Sources */,
+				A590A8081DA5D9C40049D51D /* SentConfirmationViewController.swift in Sources */,
 				A58FEEFE1DA42BF4003F93BF /* UPCScannerViewController.swift in Sources */,
 				399962E81D958D9E001284AF /* AppDelegate.swift in Sources */,
 				A58D7B9B1DA581DF005C2BE4 /* santaBagCollectionViewCell.swift in Sources */,
