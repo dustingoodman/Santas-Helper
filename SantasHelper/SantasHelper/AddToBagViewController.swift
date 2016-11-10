@@ -17,6 +17,7 @@ class AddToBagViewController: UIViewController, UICollectionViewDataSource, UICo
     @IBOutlet weak var scannedImage: UIImageView!
     @IBOutlet weak var scannedProductTitle: UILabel!
     
+    @IBOutlet weak var LoadingIndicator: UIActivityIndicatorView!
     var upcCode:String!
     
     
@@ -27,8 +28,27 @@ class AddToBagViewController: UIViewController, UICollectionViewDataSource, UICo
         bagCollectionView.dataSource = self
         bagCollectionView.delegate = self
         
+        scannedProductTitle.alpha = 0
+        scannedImage.alpha = 0
+        
+        self.LoadingIndicator.startAnimating()
+        
         loadScannedProduct()
         print(upcCode)
+        
+         delay(2) {
+            
+             self.LoadingIndicator.stopAnimating()
+            UIView.animateWithDuration(0.25, animations: { () -> Void in
+                
+                self.scannedProductTitle.alpha = 1
+                self.scannedImage.alpha = 1
+                self.LoadingIndicator.alpha = 0 
+                
+            })
+    
+            
+        }
         
     }
 

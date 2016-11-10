@@ -187,6 +187,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50588235294117645" green="0.83137254901960778" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="ecF-jX-59b">
+                                <rect key="frame" x="150" y="104" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="b2z-sY-kZa">
                                 <rect key="frame" x="0.0" y="184" width="320" height="453"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -233,6 +237,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add to Bag" id="Q1O-Wa-3cq"/>
                     <connections>
+                        <outlet property="LoadingIndicator" destination="ecF-jX-59b" id="SUv-GX-9Kc"/>
                         <outlet property="bagCollectionView" destination="b2z-sY-kZa" id="7x8-Kf-dRb"/>
                         <outlet property="scannedImage" destination="URs-8u-b1C" id="7TS-fn-zwh"/>
                         <outlet property="scannedProductTitle" destination="cQ3-E7-Teu" id="0tU-4N-H3D"/>
